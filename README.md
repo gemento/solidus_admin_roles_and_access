@@ -1,0 +1,2 @@
+# solidus_admin_roles_and_access
+Completely based on spree_admin_roles_and_access/
