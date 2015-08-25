@@ -1,0 +1,38 @@
+# encoding: UTF-8
+Gem::Specification.new do |s|
+  s.platform    = Gem::Platform::RUBY
+  s.name        = 'spree_admin_roles_and_access'
+  s.version     = '1.0.2'
+  s.summary     = 'Dynamically defines roles and grants it permissions'
+  s.required_ruby_version = '>= 1.9.3'
+  s.files = Dir['LICENSE', 'README.md', 'app/**/*', 'config/**/*', 'lib/**/*', 'db/**/*']
+
+  s.author    = "Nishant 'CyRo' Tuteja"
+  s.email     = 'info@vinsol.com'
+  s.homepage  = 'http://vinsol.com'
+  
+  s.require_path = 'lib'
+  s.requirements << 'none'
+
+  s.add_dependency "solidus_api", [">= 1.0.0.pre", "< 2"]
+  s.add_dependency "solidus_backend", [">= 1.0.0.pre", "< 2"]
+  s.add_dependency "solidus_core", [">= 1.0.0.pre", "< 2"]
+  s.add_dependency 'solidus_auth_devise'
+
+  s.add_development_dependency 'capybara'
+  s.add_development_dependency 'ffaker'
+  s.add_development_dependency 'rspec-rails', "~> 3.1.0"
+  s.add_development_dependency 'rspec-activemodel-mocks'
+  s.add_development_dependency 'shoulda-matchers'
+  s.add_development_dependency 'sqlite3'
+  s.add_development_dependency 'factory_girl_rails'
+  s.add_development_dependency 'database_cleaner'
+  s.add_development_dependency 'launchy'
+  s.add_development_dependency 'pry'
+  s.add_development_dependency 'sass-rails'
+  s.add_development_dependency 'coffee-rails'
+  s.add_development_dependency 'poltergeist'
+  s.add_development_dependency 'selenium-webdriver'
+  s.add_development_dependency 'simplecov'
+  
+end
